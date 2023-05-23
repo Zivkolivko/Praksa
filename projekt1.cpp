@@ -14,12 +14,12 @@ bool b_state[3] = { 0, 0, 0 };      //states {A, B, C}
 bool flag = 1;                      //if 1, allows turning on(1) states      
 char c;
 
-/************************************************************************************
+/******************************************************************************************
 **
 **Function          taskCheckState
 **
 **Description       Every 5 seconds puts a log into the console about current state values.
-*************************************************************************************/
+*******************************************************************************************/
 void taskCheckState() {
 
     while (1) {
@@ -35,14 +35,14 @@ void taskCheckState() {
     
 }
 
-/**********************************************************************************************************************
+/**************************************************************************************************************************
 **
 **Function          taskCheckInput
 **
 **Description       If all states are turned on(1), wait for input character(s) and proceed with the appropriate procedure.
 **                  Input can be a series of characters from which A, B and C are filtered.
 **                  It allows a series of procedures one after another with 1 input.
-***********************************************************************************************************************/
+***************************************************************************************************************************/
 void taskCheckInput() {
     
     while (1) {
